@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+    <script src="/javascripts/jquery-3.2.1.js"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <input type="button" id="login" value="로그인버튼"><br>
+    <input type="button" id="admin" value="관리자페이지">
+  </body>
+  <script>
+      $('#login').click(function () {
+          $.ajax({
+              type: 'get',
+              url: '/login',
+              success: function (data) {
+                  document.location.href = data;
+              }
+          });
+      });
+      $('#admin').click(function () {
+          $.ajax({
+              type: 'get',
+              url: '/admin',
+              success: function (data) {
+                  document.location.href = data;
+              }
+          });
+      });
+  </script>
+</html>
