@@ -34,7 +34,7 @@
     $('.login-btn').click(function () {
         $.ajax({
             type: 'get',
-            url: '/login',
+            url: '/loginConfirm',
             data: {login_name: $('#login_name').val(), login_password: $('#login_password').val()},
             success: function (data) {
                 document.location.href = data;

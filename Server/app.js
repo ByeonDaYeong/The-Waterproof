@@ -4,12 +4,14 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose    = require('mongoose');
 var app = express();
 
 //Controller 등록
 var index = require('./routes/index');
 var loginController = require('./routes/loginController');
 var adminController = require('./routes/adminController');
+var loginConfirmController = require('./routes/loginConfirmController');
 
 //View 등록
 var loginView = require('./routes/loginView');
@@ -35,10 +37,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/login', loginController);
 app.use('/admin', adminController);
+app.use('/loginConfirm', loginConfirmController);
+
+//mongodb 사용
+mongoose.connect('mongodb://localhost:27017/test');
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function callback () {
+    console.log("mongo db connection OK.");
+});
 
 //View 라우팅
-app.use('/loginView' ,loginView);
-app.use('/adminView' ,adminView);
+app.use('/loginView', loginView);
+app.use('/adminView', adminView);
 
 //테스트용 라우팅 파라메터 없는 라우팅시 참조
 app.use('/noneParamTest', noneParamTest);
