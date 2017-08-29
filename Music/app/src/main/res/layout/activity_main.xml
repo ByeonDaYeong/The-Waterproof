@@ -14,18 +14,23 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
-        <fragment
-            android:id="@+id/map"
-            class="com.google.android.gms.maps.MapFragment"
+        <Button
+            android:id="@+id/PlayButton"
             android:layout_width="match_parent"
-            android:layout_height="393dp"
-            android:layout_weight="0.42" />
+            android:layout_height="wrap_content"
+            android:text="Play" />
 
         <Button
             android:id="@+id/StopButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="stop"
-            android:layout_weight="0.68" />
+            android:text="stop" />
+
+        <Button
+            android:id="@+id/SendMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SendMessage" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
