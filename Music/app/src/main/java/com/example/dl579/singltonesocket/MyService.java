@@ -37,9 +37,9 @@ public class MyService extends Service {
             NotificationCompat.Builder mBuilder =
                     new NotificationCompat.Builder(this)
                             .setSmallIcon(android.R.drawable.btn_star)
-                            .setContentTitle("음악 플레이테스트")
+                            .setContentTitle("위급상황 위급상황")
                             .setContentIntent(mPendingIntent)
-                            .setContentText("백그라운드에서 음악이 플레이되고있어요");
+                            .setContentText("현재 집이 침수 되고있습니다 대피하세요");
             NotificationManager mNotifyMgr =
                     (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
             mNotifyMgr.notify(001, mBuilder.build());

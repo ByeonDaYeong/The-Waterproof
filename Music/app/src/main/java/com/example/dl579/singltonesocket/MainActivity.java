@@ -10,44 +10,43 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-Client client = new Client();
+public class MainActivity extends AppCompatActivity {
+    Client client = new Client();
+    String Message;
     Button PlayButton;
     Button StopButton;
     Button SendMsessage;
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        PlayButton = (Button)findViewById(R.id.PlayButton);
-        StopButton = (Button)findViewById(R.id.StopButton);
-        SendMsessage = (Button)findViewById(R.id.SendMessage);
-        PlayButton.setOnClickListener(this);
-        StopButton.setOnClickListener(this);
-        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.SEND_SMS},1);
-        SendMsessage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SendSMS("01072267934","현영이형");
-            }
-        });
+        PlayButton = (Button) findViewById(R.id.PlayButton);
+        StopButton = (Button) findViewById(R.id.StopButton);
+        SendMsessage = (Button) findViewById(R.id.SendMessage);
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS}, 1);
         client.start();
+        checkData();
     }
-    @Override
-    public void onClick(View v) {
-        Intent intent = new Intent(MainActivity.this, MyService.class);
-        Log.e("","클릭");
-        if(v.getId() == R.id.PlayButton){
-            intent.putExtra("PlayOrStop", "200");
-        }
-        else{
-            intent.putExtra("PlayOrStop", "400");
-        }
-        startService(intent);
+
+    public void checkData() {
+        new Thread() {
+            public void run() {
+                while (true) {
+                    if (client.message.equals("200")) {
+                        SendSMS("01072267934", "이상훈");
+                        client.message = "";
+                        intent = new Intent(MainActivity.this,MyService.class);
+                        intent.putExtra("PlayOrStop","200");
+                        startService(intent);
+                    }
+                }
+            }
+        }.start();
     }
 
     public void SendSMS(String number, String msg) {
         SmsManager sms = SmsManager.getDefault();
-        sms.sendTextMessage(number,null,msg,null,null);
+        sms.sendTextMessage(number, null, msg, null, null);
     }
 }
