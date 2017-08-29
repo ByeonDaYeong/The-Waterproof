@@ -28,7 +28,8 @@ public class MyService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         String message = intent.getExtras().getString("PlayOrStop");
         if(message.equals("200")) {
-            mp3 = MediaPlayer.create(this, R.raw.music);
+            mp3 = MediaPlayer.create(this, R.raw.warning);
+            mp3.setLooping(true);
             mp3.start();
             Intent mMainIntent = new Intent(this, MainActivity.class);
             PendingIntent mPendingIntent = PendingIntent.getActivity(
