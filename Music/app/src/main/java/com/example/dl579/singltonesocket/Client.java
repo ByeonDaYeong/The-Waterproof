@@ -1,15 +1,14 @@
 package com.example.dl579.singltonesocket;
 
 
-import android.app.Activity;
-import android.content.Intent;
-import android.renderscript.ScriptGroup;
-import android.telephony.SmsManager;
+
 import android.util.Log;
 
-import java.io.DataInputStream;
+import org.json.JSONObject;
+
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.Socket;
 
 /**
@@ -19,11 +18,13 @@ import java.net.Socket;
 public class Client extends Thread {
     Socket socket;
     InputStream dataInputStream = null;
+    OutputStream outputStream;
     String message="";
 
     public void run() {
         try {
-            socket = new Socket("192.168.43.153", 7777);
+            socket = new Socket("192.168.0.3", 7777);
+            outputStream = socket.getOutputStream();
             while (true) {
                 RecieveData(socket);
             }
@@ -32,6 +33,24 @@ public class Client extends Thread {
         }
     }
 
+    public void SendData(final String message)
+    {
+        new Thread() {
+            public void run() {
+                try
+                {
+                    Log.e("send", message);
+                    outputStream.write(message.getBytes());
+
+                } catch (
+                        IOException e)
+
+                {
+                    e.printStackTrace();
+                }
+            }
+        }.start();
+    }
     public void RecieveData(final Socket socket) {
         try {
             dataInputStream = socket.getInputStream();

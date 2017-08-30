@@ -14,18 +14,11 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
-        <fragment
-            android:id="@+id/map"
-            class="com.google.android.gms.maps.MapFragment"
-            android:layout_width="match_parent"
-            android:layout_height="393dp"
-            android:layout_weight="0.42" />
-
         <Button
             android:id="@+id/StopButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="stop"
-            android:layout_weight="0.68" />
+            android:layout_weight="0.06" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
