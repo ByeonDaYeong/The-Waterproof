@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>관리자 페이지</title>
+<title>부가 서비스</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -24,12 +24,12 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
   <hr>
   <div class="w3-container">
-    <h5>현재 상황</h5>
+    <h5>부가 서비스</h5>
   </div>
   <div class="w3-bar-block">
     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-    <a href="admin.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i> 현재 상황</a>
-    <a href="alarm.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i> 알람 여부</a>
+    <a href="userpage.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i> 사용자 정보</a>
+    <a href="additional.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-bell fa-fw"></i> 부가 서비스</a>
   </div>
 </nav>
 
@@ -38,62 +38,20 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <div class="w3-main" style="margin-left:300px;margin-top:43px;">
 
   <header class="w3-container" style="padding-top:22px">
-    <h5><b><i class="fa fa-dashboard"></i> 현재 상황</b></h5>
+    <h5><b> 부가 서비스</b></h5>
+    <h6>비상 연락처를 입력해주세요.</br> <h6>재난 상황 시 비상 연락처로 연락이 갑니다.</h6></h6>
   </header>
-
-  <div class="w3-row-padding w3-margin-bottom">
-      <div class="w3-quarter">
-        <div class="w3-container w3-red w3-padding-16">
-          <div class="w3-left"><i class="   fa fa-umbrella w3-xxxlarge"></i></div>
-          <div class="w3-right">
-            <h3>84.2mm</h3>
-          </div>
-          <div class="w3-clear"></div>
-          <h4>위험 강수량</h4>
-        </div>
-      </div>
-      <div class="w3-quarter">
-        <div class="w3-container w3-blue w3-padding-16">
-          <div class="w3-left"><i class="fa fa-sort-numeric-asc w3-xxxlarge"></i></div>
-          <div class="w3-right">
-            <h3>3등급</h3>
-          </div>
-          <div class="w3-clear"></div>
-          <h4>위험 지역 등급</h4>
-        </div>
-      </div>
-      <div class="w3-quarter">
-        <div class="w3-container w3-teal w3-padding-16">
-          <div class="w3-left"><i class="fa fa-mixcloud w3-xxxlarge"></i></div>
-          <div class="w3-right">
-            <h3>주의보</h3>
-          </div>
-          <div class="w3-clear"></div>
-          <h4>홍수 예보</h4>
-        </div>
-      </div>
-      <div class="w3-quarter">
-        <div class="w3-container w3-orange w3-text-white w3-padding-16">
-          <div class="w3-left"><i class="fa fa-tint w3-xxxlarge"></i></div>
-          <div class="w3-right">
-            <h3>0.00mm</h3>
-          </div>
-          <div class="w3-clear"></div>
-          <h4>현재 수위</h4>
-        </div>
-      </div>
-    </div>
 
   <div class="w3-panel">
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-twothird">
-        <h5>사용자 정보</h5>
         <table class="w3-table w3-striped w3-white">
           <tr>
-            <th><i class="fa fa-users fa-fw"></i></th>
+            <th>번호</th>
             <th>이름</th>
-            <th>주소</th>            
-            <th>위험 등급</th>
+            <th>연락처</th>
+          </tr>
+          <tr>
           </tr>
         </table>
       </div>
