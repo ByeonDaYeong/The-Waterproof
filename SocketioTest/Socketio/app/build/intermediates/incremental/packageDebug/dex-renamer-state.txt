@@ -1,0 +1,7 @@
+#Wed Aug 30 13:59:37 KST 2017
+base.0=/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_af4479984e004c0f9a60c3b79c6d301f1933ec60
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_05b0c44dad3a51db4d92b116cf1bc1182b5684e0/classes.dex
+base.1=/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_05b0c44dad3a51db4d92b116cf1bc1182b5684e0
+file.0=/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_af4479984e004c0f9a60c3b79c6d301f1933ec60/classes.dex

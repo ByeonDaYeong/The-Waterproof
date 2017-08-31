@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/res/color/switch_thumb_material_dark.xml"
+    }
+]

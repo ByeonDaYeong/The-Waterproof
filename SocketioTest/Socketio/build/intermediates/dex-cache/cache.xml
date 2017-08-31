@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/libs/engine.io-client-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="45fc6115750f06a9cd5dd71632cb7fc052cd66de">
+        <dex dex="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/transforms/dex/debug/folders/1000/2/engine.io-client-1.0.0_7020cd2a4ddf062439397d1a96e769891ae25ff0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/libs/json-20090211.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c183aa3a2a6250293808bba12262c8920ce5a51c">
+        <dex dex="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/transforms/dex/debug/folders/1000/2/json-20090211_c50b4bd0ba1c67c2febe72d26742336fdd047fb5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/libs/okio-1.13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/transforms/dex/debug/folders/1000/2/okio-1.13.0_38ea7fa30b8a3d67c39e445d6e287c190e32be8b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/libs/socket.io-client-1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="28dde99672ed62a85e85a7df096c6bec698785b4">
+        <dex dex="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/transforms/dex/debug/folders/1000/2/socket.io-client-1.0.0_30c467b92dce80cec09ab05b6a045e88551eb49e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/libs/okhttp-3.8.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4d060ca3190df0eda4dc13415532a12e15ca5f11">
+        <dex dex="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/transforms/dex/debug/folders/1000/2/okhttp-3.8.1_85eaf3ec0c9792034ce48826d69ec9f6e9438b12/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9ab68d312ef2d0efeacba56a439206690279b929">
+        <dex dex="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_af4479984e004c0f9a60c3b79c6d301f1933ec60/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/libs/Java-WebSocket-1.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="db2658f013fb163de4a99274c2eb9e17efe535d2">
+        <dex dex="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/transforms/dex/debug/folders/1000/2/Java-WebSocket-1.3.0_a2f4d051c15161d420a91b61525dc4ca431fe48e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_05b0c44dad3a51db4d92b116cf1bc1182b5684e0/classes.dex" />
+    </item>
+
+</items>

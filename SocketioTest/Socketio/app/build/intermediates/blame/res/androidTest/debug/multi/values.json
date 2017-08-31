@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "/Users/jiharu/.android/build-cache/cd2c5a8b9a4e9d0fdcf3bb4773e4b1c362ea7dea/output/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 45,
+                        "endOffset": 270
+                    }
+                }
+            }
+        ]
+    }
+]

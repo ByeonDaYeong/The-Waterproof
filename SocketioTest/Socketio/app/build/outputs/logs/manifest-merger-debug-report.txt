@@ -1,0 +1,91 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:2:1-20:12
+	package
+		ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:3:5-28
+		INJECTED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml
+application
+ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:4:5-18:19
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/jiharu/.android/build-cache/5a9fd7a84014d28925b314606348e31c9be744e4/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/jiharu/.android/build-cache/6bebde98725073149f0a1ca03bee5d1caf4d63e3/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/jiharu/.android/build-cache/555786fcd639dd900d93c8963ddeed1b5b11520e/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/jiharu/.android/build-cache/364f83f51a8c1508a552c5eaa76c4d7f4038523d/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/jiharu/.android/build-cache/d269660d5f95cc7cd0533b066a3caaad6a466470/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/jiharu/.android/build-cache/cfe79b5621cd083fbfbb423a4ced0ba680990bb8/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/jiharu/.android/build-cache/260cdfca1cab56cfdfafb2edda7fb357f4807fff/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/jiharu/.android/build-cache/94a97f7dbe4d08fc6caed2d0aa8b5dff7e235c3c/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jiharu/.android/build-cache/ea6816eeb043f52e20e4ded63c2ef4d7c326c358/output/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:7:9-41
+	android:supportsRtl
+		ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:9:9-35
+	android:roundIcon
+		ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:8:9-54
+	android:allowBackup
+		ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:5:9-35
+	android:icon
+		ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:6:9-43
+	android:theme
+		ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:10:9-40
+activity#test.socketio.MainActivity
+ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:11:9-17:20
+	android:name
+		ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:11:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:12:13-16:29
+action#android.intent.action.MAIN
+ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:13:17-69
+	android:name
+		ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:13:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:15:17-77
+	android:name
+		ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:15:27-74
+uses-permission#android.permission.INTERNET
+ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:19:5-67
+	android:name
+		ADDED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml:19:22-64
+uses-sdk
+INJECTED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/jiharu/.android/build-cache/5a9fd7a84014d28925b314606348e31c9be744e4/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/jiharu/.android/build-cache/6bebde98725073149f0a1ca03bee5d1caf4d63e3/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/jiharu/.android/build-cache/555786fcd639dd900d93c8963ddeed1b5b11520e/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/jiharu/.android/build-cache/364f83f51a8c1508a552c5eaa76c4d7f4038523d/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/jiharu/.android/build-cache/d269660d5f95cc7cd0533b066a3caaad6a466470/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/jiharu/.android/build-cache/cfe79b5621cd083fbfbb423a4ced0ba680990bb8/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/jiharu/.android/build-cache/260cdfca1cab56cfdfafb2edda7fb357f4807fff/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/jiharu/.android/build-cache/94a97f7dbe4d08fc6caed2d0aa8b5dff7e235c3c/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jiharu/.android/build-cache/ea6816eeb043f52e20e4ded63c2ef4d7c326c358/output/AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/jiharu/.android/build-cache/5a9fd7a84014d28925b314606348e31c9be744e4/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/jiharu/.android/build-cache/6bebde98725073149f0a1ca03bee5d1caf4d63e3/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/jiharu/.android/build-cache/555786fcd639dd900d93c8963ddeed1b5b11520e/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/jiharu/.android/build-cache/364f83f51a8c1508a552c5eaa76c4d7f4038523d/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/jiharu/.android/build-cache/d269660d5f95cc7cd0533b066a3caaad6a466470/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/jiharu/.android/build-cache/cfe79b5621cd083fbfbb423a4ced0ba680990bb8/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/jiharu/.android/build-cache/260cdfca1cab56cfdfafb2edda7fb357f4807fff/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/jiharu/.android/build-cache/94a97f7dbe4d08fc6caed2d0aa8b5dff7e235c3c/output/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/AndroidManifest.xml:26:9-47

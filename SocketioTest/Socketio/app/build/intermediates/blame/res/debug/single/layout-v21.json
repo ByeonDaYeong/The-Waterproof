@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/jiharu/.android/build-cache/1ea7a68b0066a03e052fe760485d19c9c9247f0b/output/res/layout-v21/notification_template_custom_big.xml"
+    }
+]

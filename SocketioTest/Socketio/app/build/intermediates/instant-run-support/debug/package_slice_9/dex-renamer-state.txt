@@ -1,0 +1,4 @@
+#Wed Aug 30 13:45:07 KST 2017
+base.0=/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9
+renamed.0=classes.dex
+file.0=/Users/jiharu/Desktop/AndroidStudioWorkSpace/Socketio/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex
