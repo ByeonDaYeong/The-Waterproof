@@ -20,33 +20,32 @@ import android.widget.Button;
 
 import org.json.JSONObject;
 
-import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Client client = new Client();
+
     AudioManager am;
     Button StopButton;
     Intent intent;
     LocationManager locationManager;
     double latitude = 0.0;double longitude = 0.0;
-
+    Client client;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
-        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS}, 1);
+        client =  new Client();
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS,Manifest.permission.ACCESS_FINE_LOCATION}, 2);
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         StopButton = (Button) findViewById(R.id.StopButton);
         chkGpsService();
         am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-        client.start();
         StopButton.setOnClickListener(this);
         startLocationService();
         checkData();
+        client.socket.connect();
     }
 
 //1000은 1초마다, 1은 1미터마다 해당 값을 갱신한다는 뜻으로, 딜레이마다 호출하기도 하지만
@@ -89,14 +88,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         new Thread() {
             public void run() {
                 while (true) {
-                    if (client.message.equals("200")) {
+                    intent = new Intent(MainActivity.this, MyService.class);
+                    intent.putExtra("PlayOrStop", "200");
+                    if (client.message.equals("1")) {
                         SendSMS("01072267934", "이상훈");
                         client.message = "";
-                        am.setStreamVolume(AudioManager.STREAM_MUSIC, 15, AudioManager.FLAG_PLAY_SOUND);
-                        intent = new Intent(MainActivity.this, MyService.class);
-                        intent.putExtra("PlayOrStop", "200");
-                        startService(intent);
+                        intent.putExtra("level","1");
+                    } else if (client.message.equals("2")) {
+                        SendSMS("01072267934", "이상훈");
+                        client.message = "";
+                        intent.putExtra("level","2");
+                    }else if (client.message.equals("3")) {
+                        SendSMS("01072267934", "이상훈");
+                        client.message = "";
+                        intent.putExtra("level","3");
+                    }else if (client.message.equals("4")) {
+                        SendSMS("01072267934", "이상훈");
+                        client.message = "";
+                        intent.putExtra("level","4");
                     }
+                    am.setStreamVolume(AudioManager.STREAM_MUSIC, 15, AudioManager.FLAG_PLAY_SOUND);
+                    startService(intent);
                 }
             }
         }.start();
@@ -131,7 +143,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        client.SendData("asdasdqwezxc");
+        intent = new Intent(MainActivity.this, MyService.class);
+        intent.putExtra("PlayOrStop", "400");
+        startService(intent);
     }
 
     class GPSListener implements LocationListener
@@ -146,19 +160,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 object.put("경도",longitude);
                 TimerTask adTast = new TimerTask() {
                     public void run() {
-                        client.SendData(object.toString());
+                        Log.e("Location","위도"+latitude);
+                        client.SendLocationMessage(object);
                         Log.e("adTast ", "timer");
                     }
                 };
                 Timer timer = new Timer();
                 timer.schedule(adTast, 0, 3000);
             }
-            catch (Exception e)
-            {
+            catch (Exception e) {
                 e.printStackTrace();
             }
-            String msg = "Latitude : "+ latitude + "Longitude:"+ longitude;
-            Log.e("GPSLocationService", msg);
         }
 
         @Override

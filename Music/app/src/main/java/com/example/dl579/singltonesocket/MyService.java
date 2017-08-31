@@ -27,8 +27,12 @@ public class MyService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         String message = intent.getExtras().getString("PlayOrStop");
+        String level = intent.getExtras().getString("level");
         if(message.equals("200")) {
-            mp3 = MediaPlayer.create(this, R.raw.warning);
+            if(level.equals("1")) {mp3 = MediaPlayer.create(this, R.raw.warning);}
+            else if(level.equals("2")){mp3 = MediaPlayer.create(this, R.raw.music);}
+            else if(level.equals("3")){mp3 = MediaPlayer.create(this, R.raw.warning);}
+            else if(level.equals("4")){mp3 = MediaPlayer.create(this, R.raw.music);}
             mp3.setLooping(true);
             mp3.start();
             Intent mMainIntent = new Intent(this, MainActivity.class);
