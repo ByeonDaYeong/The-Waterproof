@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<title>부가 서비스</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Raleway", sans-serif
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  .switch input {
+    display: none;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked+.slider {
+    background-color: #2196F3;
+  }
+
+  input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+</style>
+
+<body class="w3-light-grey">
+
+  <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+    <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+    <span class="w3-bar-item w3-right">몸이 불편한 가족과 친구를 지켜주는 Waterproof</span>
+  </div>
+
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container w3-row">
+      <div class="w3-col s8 w3-bar">
+        <span>환영합니다.</span><br>
+      </div>
+    </div>
+    <hr>
+    <div class="w3-container">
+      <h5>MENU</h5>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+      <a href="/userInfo" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i> 사용자 정보</a>
+      <a href="/userAdd" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-bell fa-fw"></i> 부가 서비스</a>
+    </div>
+  </nav>
+
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+    <header class="w3-container" style="padding-top:22px">
+      <h5><b> 부가 서비스</b></h5>
+      <h6>부가 서비스 이용 여부와 비상 연락처를 입력해주세요.</br>
+        <h6>재난 상황 시 비상 연락처로 연락이 갑니다.</h6>
+      </h6>
+    </header>
+    <div class="row" style="padding-top:22px; margin-left:50px; margin-right:50px; background-color:white">
+      <div class="col-sm-4">
+        <p>부가서비스 신청</p>
+      </div>
+
+      <div class="col-sm-5">
+        <label class="switch">
+              <input type="checkbox" checked="checked">
+              <span class="slider round"></span>
+            </label>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-left:300px; margin-right:50px;  margin-top:43px;">
+    <div class="container" style="padding-top:22px; margin-left:50px; background-color:white; width:880px;">
+      
+        <div class="row" style="margin-bottom:15px;">
+            <div class="col-sm-4">
+          <h4>비상 연락망 1</h4>
+        </div>
+        <div class="col-sm-4">
+          <h5>이름</h5>
+          <h5>연락처</h5>
+        </div>
+        <div class="col-sm-2">
+            <input type="text" class="form-control" id="name1" style="margin-bottom:5px;" value="<%=data[0].name%>">
+            <input type="text" class="form-control" id="phone1" value="<%=data[0].phoneNumber%>">
+        </div>
+      </div>
+      <div class="row" style="margin-bottom:15px;">
+          <div class="col-sm-4">
+            <h4>비상 연락망 2</h4>
+          </div>
+          <div class="col-sm-4">
+            <h5>이름</h5>
+            <h5>연락처</h5>
+          </div>
+          <div class="col-sm-2">
+              <input type="text" class="form-control" id="name2" style="margin-bottom:5px;" value="<%=data[1].name%>">
+              <input type="text" class="form-control" id="phone2" value="<%=data[1].phoneNumber%>">
+          </div>
+        </div>
+        <div class="row" style="margin-bottom:20px;">
+            <div class="col-sm-4">
+              <h4>비상 연락망 3</h4>
+            </div>
+            <div class="col-sm-4">
+              <h5>이름</h5>
+              <h5>연락처</h5>
+            </div>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="name3" style="margin-bottom:5px;" value="<%=data[2].name%>">
+                <input type="text" class="form-control" id="phone3" value="<%=data[2].phoneNumber%>">
+            </div>
+          </div>
+    </div>
+  </div>
+  <script>
+    var mySidebar = document.getElementById("mySidebar");
+    var overlayBg = document.getElementById("myOverlay");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
+
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

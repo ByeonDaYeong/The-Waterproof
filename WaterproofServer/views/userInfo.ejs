@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<title>사용자 정보</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+<script>
+
+</script>
+<body class="w3-light-grey">
+
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+    <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i
+                class="fa fa-bars"></i>  Menu
+    </button>
+    <span class="w3-bar-item w3-right">Waterproof</span>
+</div>
+
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container w3-row">
+        <div class="w3-col s8 w3-bar">
+            <span>환영합니다.</span><br>
+        </div>
+    </div>
+    <hr>
+    <div class="w3-container">
+        <h5>이용자 페이지</h5>
+    </div>
+    <div class="w3-bar-block">
+        <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black"
+           onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+        <a href="/userInfo" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i> 사용자 정보</a>
+        <a href="/userAdd" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i> 부가 서비스</a>
+    </div>
+</nav>
+
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+    <header class="w3-container" style="padding-top:22px">
+        <h4><b> 사용자 정보</b></h4>
+        <h5>사용자 정보 페이지입니다. 인적 사항을 잘 확인해주세요.</h5>
+    </header>
+    <div class="w3-container" style="margin:50px; padding-left:50px">
+        <div class="row">
+            <div class="col-sm-3">
+                <h4>이름</h4>
+            </div>
+            <div class="col-sm-3">
+                <h4><%= personName %></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h4>성별</h4>
+            </div>
+            <div class="col-sm-3">
+                <h4><%=gender%></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h4>주소</h4>
+            </div>
+            <div class="col-sm-3">
+                <h4><%=addressA%> <%=addressB%></h4>
+                </br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h4>아이디</h4>
+            </div>
+            <div class="col-sm-3">
+                <h4><%=name%></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h4>패스워드</h4>
+            </div>
+            <div class="col-sm-3">
+                <h4><%=password%></h4>
+                </br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h4>장애종류</h4>
+            </div>
+            <div class="col-sm-3">
+                <h4><%=disabledType%></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h4>장애번호</h4>
+            </div>
+            <div class="col-sm-3">
+                <h4><%=disabledNumber%></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h4>장애등급</h4>
+            </div>
+            <div class="col-sm-3">
+                <h4><%=disabledRank%></h4>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+
+<script>
+    var mySidebar = document.getElementById("mySidebar");
+
+    var overlayBg = document.getElementById("myOverlay");
+
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            mySidebar.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+
+    function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+</script>
+
+</body>
+
+</html>
